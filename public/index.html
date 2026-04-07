@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistema de Reservas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>📅 Sistema de Reservas</h1>
+
+    <div class="grid">
+      
+      <!-- Turnos -->
+      <div class="card">
+        <h2>Turnos disponibles</h2>
+        <ul id="slots-list"></ul>
+      </div>
+
+      <!-- Formulario -->
+      <div class="card">
+        <h2>Reservar turno</h2>
+        <form id="reservation-form">
+          <input type="hidden" id="slot_id">
+
+          <input type="text" id="customer_name" placeholder="Nombre" required>
+          <input type="email" id="customer_email" placeholder="Email" required>
+          <input type="text" id="customer_phone" placeholder="Teléfono" required>
+
+          <button type="submit">Reservar</button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
